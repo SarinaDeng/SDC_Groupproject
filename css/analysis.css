@@ -1,0 +1,413 @@
+/*  Fonts  */
+
+@font-face {
+    font-family: 'raleway-regular';
+    src: url('../fonts/raleway-regular.eot');
+    src: url('../fonts/raleway-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-regular.woff') format('woff'), url('../fonts/raleway-regular.ttf') format('truetype'), url('../fonts/raleway-regular.svg#ralewayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-bold';
+    src: url('../fonts/raleway-bold.eot');
+    src: url('../fonts/raleway-bold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-bold.woff') format('woff'), url('../fonts/raleway-bold.ttf') format('truetype'), url('../fonts/raleway-bold.svg#ralewaybold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url('../fonts/raleway-semibold.eot');
+    src: url('../fonts/raleway-semibold.eot?#iefix') format('embedded-opentype'), url('../fonts/raleway-semibold.woff') format('woff'), url('../fonts/raleway-semibold.ttf') format('truetype'), url('../fonts/raleway-semibold.svg#ralewaysemibold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*  General CSS*/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+    font-weight: bolder
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.17em;
+}
+
+h5 {
+    font-size: .83em;
+}
+
+h6 {
+    font-size: .75em;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+.container {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    font-family: "raleway-regular", arial;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: red;
+}
+
+body {
+    background-color: rgb(245, 244, 244);
+}
+
+
+/* header */
+
+header {
+    width: 100%;
+    height: 90px;
+    background: #ffffff;
+    position: relative;
+    border-bottom: 1.5px solid;
+}
+
+header .logo {
+    margin-top: 30px;
+    float: left;
+    margin-left: 2px;
+}
+
+header p {
+    margin-top: 40px;
+    margin-left: 15px;
+    float: left;
+    font-family: "raleway-regular", arial;
+    font-size: 20px;
+    color: #5e5d5d;
+}
+
+header nav {
+    float: right;
+    margin-top: 37px;
+}
+
+header nav ul li {
+    list-style: circle;
+    float: left;
+    margin-left: 45px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #5e5d5d;
+    font-family: "raleway-regular", arial;
+    font-size: 18px;
+    letter-spacing: .5px;
+    transition: all .2s linear;
+    -o-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+}
+
+header nav ul li a:hover,
+header nav ul .selected {
+    color: #ff4242;
+}
+
+
+/* introduce */
+
+.introduce {
+    width: 1240px;
+    /* border: 2px solid; */
+    margin: 0 auto;
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    background-color: rgb(255, 255, 255);
+    /* padding: 20px; */
+    line-height: 25px;
+    border-radius: 8px;
+    box-shadow: rgb(179, 179, 179) 5px 5px 8px 2px;
+    border: 1.5px solid;
+    margin-top: 30px;
+}
+
+.introduce .text {
+    /* background-color: thistle; */
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.introduce .text h1 {
+    border-bottom: 1px solid;
+}
+
+
+/* regression */
+
+.regression {
+    width: 1200px;
+    border: 1.5px solid;
+    margin: 0 auto;
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(179, 179, 179) 5px 5px 8px 2px;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.regression h1 {
+    margin-top: 10px;
+    border-bottom: 1px solid;
+}
+
+.regression .box {
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+}
+
+.regression .box .img1 {
+    width: 393px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    float: left;
+    margin-right: 10px;
+    overflow: hidden;
+}
+
+.regression .box .img1 img,
+.regression .box .img1_last img {
+    width: 100%;
+    height: 100%;
+}
+
+.regression .box .img1_last {
+    width: 393px;
+    height: 300px;
+    background-color: tan;
+    float: left;
+}
+
+.regression .box1 {
+    background-color: rgb(193, 241, 241);
+    position: relative;
+    margin-bottom: 14px;
+}
+
+.regression .box1 .p1 {
+    left: 60px;
+    position: absolute;
+}
+
+.regression .box1 .p2 {
+    left: 460px;
+    position: absolute;
+}
+
+.regression .box1 .p3 {
+    left: 860px;
+    position: absolute;
+}
+
+.regression .box2 {
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+    line-height: 25px;
+    border-bottom: 1px solid;
+}
+
+.regression .box9 {
+    background-color: rgb(175, 150, 175);
+    margin-top: 20px;
+}
+
+.regression .box9 .box9_2 {
+    background-color: rgb(255, 255, 255);
+}
+
+.regression .box9_2 ul {
+    padding: 20px;
+}
+
+
+/* cluster */
+
+.cluster {
+    width: 1200px;
+    background-color: thistle;
+    margin: 0 auto;
+    margin-top: 30px;
+    color: #6d6d6d;
+    font-family: "raleway-regular", arial;
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    box-shadow: rgb(179, 179, 179) 5px 5px 8px 2px;
+    padding: 20px;
+    border: 1.5px solid;
+}
+
+.cluster h1 {
+    border-bottom: 1px solid;
+    margin-top: 15px;
+}
+
+.cluster .box4 {
+    width: 1200px;
+    background-color: rgb(255, 255, 255);
+    line-height: 25px;
+}
+
+.cluster .box5,
+.cluster .box6,
+.cluster .box7 {
+    width: 1200px;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    margin-top: 14px;
+}
+
+.cluster .box5 .box5_1,
+.cluster .box5 .box5_2,
+.cluster .box5 .box5_3 {
+    width: 390.6px;
+    height: 90%;
+    margin-right: 14px;
+    background-color: rgb(216, 167, 216);
+    float: left;
+}
+
+.cluster .box5 .box5_3 {
+    margin-right: 0;
+}
+
+.cluster .box5 .img2,
+.cluster .box6 .img2,
+.cluster .box7 .img2 {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(245, 245, 192);
+}
+
+
+/* .cluster .box5 h3,
+.cluster .box6 h3,
+.cluster .box7 h3 {
+    border-bottom: 1px solid;
+} */
+
+.cluster .box5 .img2 img,
+.cluster .box6 .img2 img,
+.cluster .box7 .img2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.cluster .box6 .box6_1,
+.cluster .box6 .box6_2,
+.cluster .box6 .box6_3 {
+    width: 390.6px;
+    height: 90%;
+    margin-right: 14px;
+    background-color: rgb(216, 167, 216);
+    float: left;
+}
+
+.cluster .box5 .text2,
+.cluster .box6 .text2,
+.cluster .box7 .text2 {
+    padding: 14px;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.cluster .box6 .box6_3 {
+    margin-right: 0;
+}
+
+.cluster .box7 .box7_1,
+.cluster .box7 .box7_2,
+.cluster .box7 .box7_3 {
+    width: 390.6px;
+    height: 90%;
+    margin-right: 14px;
+    background-color: rgb(216, 167, 216);
+    float: left;
+}
+
+.cluster .box7 .box7_3 {
+    margin-right: 0;
+}
+
+.cluster .box8 {
+    margin-top: 14px;
+    margin-bottom: 14px;
+    /* background-color: rgb(216, 167, 216); */
+    line-height: 35px;
+    padding: 20px;
+}
+
+
+/*  footer  */
+
+.foot {
+    height: 100px;
+    border-top: 1.5px solid;
+    margin-top: 30px;
+}
+
+.foot #nav {
+    height: 50px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#backtotop {
+    text-align: center;
+    margin-top: 0px;
+}
+
+#backtotop a {
+    text-decoration: underline;
+}
+
+footer .logo {
+    width: 30px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 15px;
+}
